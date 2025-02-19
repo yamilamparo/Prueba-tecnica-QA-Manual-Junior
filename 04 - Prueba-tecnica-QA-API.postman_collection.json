@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "b041ccc1-0707-45d3-890f-ad8af86f183b",
+		"name": "Prueba-tecnica-QA-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31360698"
+	},
+	"item": [
+		{
+			"name": "Obtenet Lista de Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario Valido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Yamil Amparo\",\r\n  \"username\": \"year\",\r\n  \"email\": \"yamil@gmail.com\",\r\n  \"address\": {\r\n    \"street\": \"16\",\r\n    \"suite\": \"12\",\r\n    \"city\": \"Vista Bella, Villa Mella\",\r\n    \"zipcode\": \"11206\",\r\n    \"geo\": {\r\n      \"lat\": \"18°33'32.5\",\r\n      \"lng\": \"69°54'09.4\"\r\n    }\r\n  },\r\n  \"phone\": \"809-458-8625\",\r\n\"website\": \"babelgroup.com\",\r\n  \"company\": {\r\n    \"name\": \"Babel\",\r\n    \"catchPhrase\": \"Tecnologías Exponenciales para la Aceleración Digital\",\r\n    \"bs\": \"Babel Group\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario Invalido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Estarlin Amparo\",\r\n  \"username\": \"year\",\r\n  \"email\": \"yamilmail.com\",\r\n  \"address\": {\r\n    \"street\": \"16\",\r\n    \"suite\": \"12\",\r\n    \"city\": \"Vista Bella, Villa Mella\",\r\n    \"zipcode\": \"112AA\",\r\n    \"geo\": {\r\n      \"lat\": \"Latitud\",\r\n      \"lng\": \"Longitud\"\r\n    }\r\n  },\r\n  \"phone\": \"Telefono\",\r\n\"website\": \"babelgroup.com\",\r\n  \"company\": {\r\n    \"name\": \"Babel\",\r\n    \"catchPhrase\": \"Tecnologías Exponenciales para la Aceleración Digital\",\r\n    \"bs\": \"Babel Group\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario Invalido Incompleto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Estarlin Amparo\",\r\n  \"username\": \"year\",\r\n  \"email\": \"yamilmail.com\",\r\n  \"address\": {\r\n    \"street\": \"16\",\r\n    \"suite\": \"12\",\r\n    \"city\": \"Vista Bella, Villa Mella\",\r\n    \"zipcode\": \"112AA\",\r\n    \"geo\": {\r\n      \"lat\": \"Latitud\",\r\n      \"lng\": \"Longitud\"\r\n    }\r\n  },\r\n  \"phone\": \"Telefono\",\r\n\"website\": \"babelgroup.com\",\r\n  \"company\": {\r\n    \"name\": \"Babel\",\r\n    \"catchPhrase\": \"Tecnologías Exponenciales para la Aceleración Digital\",\r\n    \"bs\": \"Babel Group\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
